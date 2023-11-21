@@ -1,0 +1,210 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{stackengine}
+\usepackage{enumitem}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries Examen unidad 5 
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section{Resuelve el sistema}
+\[ x_1 + 2x_2 - 3x_3 = 2 \] 
+\[ 2x_1 - x_2 + 2x_3 = 3 \] 
+\[ 4x_1 + 3x_2 - 4x_3 = 7 \] 
+
+Buscamos su forma escalonada usando la matriz aumentada \\ \\
+
+    \( 
+        \left[\begin{array}{ccc|c}
+        1 & 2 & -3 & 2 \\
+        2 & -1 & 2 & 3 \\
+        4 & 3 & -4 & 7 
+        \end{array}\right] 
+        \xlongequal[R_3=R_3-4R_1]{R_2=R_2 - 2R_1}
+        \left[\begin{array}{ccc|c}
+        1 & 2 & -3 & 2 \\
+        0 & -5 & 8 & -1 \\
+        0 & -5 & 8 & -1 
+        \end{array}\right] 
+        \xlongequal[]{R_3=R_3 - R_2}
+        \left[\begin{array}{ccc|c}
+        1 & 2 & -3 & 2 \\
+        0 & -5 & 8 & -1 \\
+        0 & 0 & 0 & 0 
+        \end{array}\right]
+    \) \\ \\
+
+Transformamos a un nuevo sistem de ecuaciones y despejamos los valores de \(x_1, \quad x_2, \quad x_3\)
+
+\[x_1 + 2 x_2 - 3x_3 = 2\] 
+\[-5x_2 + 8x_3 = -1 \]
+
+Despejamos  \(x_2 \quad con \quad respecto \quad a \quad x_3\) \\ \\
+\(-5x_2 +8x_3 = -1\) \\
+\(-5x_2 = -1 - 8x_3  \) \\ 
+\( -1 (-5x_2)= -1(-1 - 8x_3)  \) \\
+\( 5x_2 = 8x_3 + 1  \) \\ \\
+\(x_2 = \frac{8x_3}{5} + \frac{1}{5} \) \\\\
+
+Despejamos \(x_1\) utilizando el valor de \(x_2\) con respecto a \(x_3\) \\\\
+\(x_1+2x_2 - 3x_3 = 2\) \\ \\ 
+\(x_1 + 2( \frac{8x_3 + 1}{5}) -3x_3 = 2\) \\ \\
+\(x_1 + \frac{16x_3}{5} + \frac{2}{5} - 3x_3 = 2\) \\\\
+\(x_1 + \frac{16x_3}{5} -3x_3 = 2 -\frac{2}{5}\) \\\\
+\(x_1+\frac{x_3}{5} = \frac{8}{5}\) \\\\
+\(x_1 = - \frac{x_3}{5} + \frac{8}{5}\)
+
+
+\section{Determina los valores de a para que el sistema tenga...}
+    \begin{itemize}[label=$\bullet$]
+      \item  Una solución   
+      \item Una infinidad de soluciones
+      \item No tenga soluciones
+    \end{itemize}
+
+    del sistema de ecuaciones
+
+    \[x_1+2x_2+x_3=1\]
+    \[-x_1 + 4x_2 + 3x_3 = 2\]
+    \[2x_1 - 2x_2+ ax_3 = 3\]
+
+Buscamos la forma escalonada de la  sig matriz para encontrar los valores \\ \\
+
+    \[
+        \left[\begin{array}{ccc|c}
+        1 & 2 & 1 & 1 \\
+        -1 & 4 & 3 & 2 \\
+        2 & -2 & a & 3 
+        \end{array}\right] 
+    \] \\  \\  
+
+
+    \( 
+        \left[\begin{array}{ccc|c}
+        1 & 2 & 1 & 1 \\
+        -1 & 4 & 3 & 2 \\
+        2 & -2 & a & 3 
+        \end{array}\right] 
+        \xlongequal[R_2 = R2+R_1]{R_3=R_3 - 2R_1}
+        \left[\begin{array}{ccc|c}
+        1 & 2 & 1 & 1 \\
+        0 & 6 & 4 & 3 \\
+        0 & -6 & a-2 & 1 
+        \end{array}\right] 
+        \xlongequal[]{R_3=R_3 + R_2}
+        \left[\begin{array}{ccc|c}
+        1 & 2 & 1 & 1 \\
+        0 & 6 & 4 & 3 \\
+        0 & 0 & a+2 & 4 
+        \end{array}\right] 
+    \) \\ \\
+
+    Dado lo anterior tenemos tres conclusiones
+
+    \begin{itemize}[label=$\bullet$]
+      \item  Una solución: Para tener una solucion puede tomar varios numeros pero por ejemplo tomaremos 0, lo que determinara que \(x_3 = 2\) y asi tendra una solucion exacta para \(x_1\), \(x_2\) y \(x_3\)    
+      \item Una infinidad de soluciones:
+      En este caso no existe ya que para hacer que sea real necesitamos que la ultima fila de la matriz en su ultima fila sea todos cero y no hay forma de que asignandole un valor a \(a\) esea verdadera la operacion
+      
+      \item No tenga soluciones: Para este caso tenemos que hace que la ultima fila de la matriz sea inconsistente, esto se logra con \(a = -2\) lo que nos resultara en que \(0= 4 \) y por tanto haciendo que el sistema no tenga solucion
+    \end{itemize}
+
+\section{Resuelve el sistema}
+\[ w - x +y - z=1\]
+\[w+x-y-z= 1\]
+\[w-x-y+z=2\]
+\[4w - 2x -2y = \]
+
+Buscamos su forma escalonada reducida para encontrar una solucion al sistema
+
+ \[
+        \left[\begin{array}{cccc|c}
+        1 & -1 & 1 & -1 & 1\\
+        1 & 1 & -1 & -1 & 1\\
+        1 & -1 & -1 & 1 & 2 \\
+        4 & -2 & -2 & 0 & 1
+
+        \end{array}\right] 
+    \] \\  \\  
+
+
+     \[
+        \left[\begin{array}{cccc|c}
+        1 & -1 & 1 & -1 & 1\\
+        1 & 1 & -1 & -1 & 1\\
+        1 & -1 & -1 & 1 & 2 \\
+        4 & -2 & -2 & 0 & 1
+        \end{array}\right] 
+        \xlongequal[R_2 = R_2 -R_1   y \quad R_4= R_4 - 4R_1]{R_3=R_3 - R_1}
+        \left[\begin{array}{cccc|c}
+        1 & -1 & 1 & -1 & 1\\
+        0 & 2 & -2 & 0 & 0\\
+        0 & 0 & -2 & 2 & 1 \\
+        0 & 2 & -6 & 4 & -3
+        \end{array}\right] 
+    \] \\  \\  
+
+ \[
+        \xlongequal[]{R_4=R_4 - R_2}
+        \left[\begin{array}{cccc|c}
+        1 & -1 & 1 & -1 & 1\\
+        0 & 2 & -2 & 0 & 0\\
+        0 & 0 & -2 & 2 & 1 \\
+        0 & 0 & -4 & 4 & -3
+        \end{array}\right] 
+        \xlongequal[]{R_4=R_4 - 2R_3}
+        \left[\begin{array}{cccc|c}
+        1 & -1 & 1 & -1 & 1\\
+        0 & 2 & -2 & 0 & 0\\
+        0 & 0 & -2 & 2 & 1 \\
+        0 & 0 & 0 & 0 & -5
+        \end{array}\right] 
+    \] \\  \\  
+
+
+Dado que no resulta en una insonsistencia al pasarlo a un nuevo sistema de ecuaciones podemos concluir que el sistema original no tiene solucion
+
+
+
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{stackengine}
+\usepackage{enumitem}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries Demuestra que  \(|z|^{-1} = |z^{-1}| \)
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section{Demuestra que \(|z|^{-1} = |z^{-1}|\) }
+Dado \(z=(a,b) \quad , \quad z^{-1} = ( \frac{a}{a^2+b^2}, \frac{-b}{a^2+b^2} )  \) y  \(|z|=\sqrt{a^2 + b^2 } \)  procedemos a desarrollar.
+
+\[|z|^{-1} = |z^{-1}|\] 
+
+\[|(a,b)|^{-1} = |( \frac{a}{a^2+b^2}, \frac{-b}{a^2+b^2} )|\]
+
+\[(\sqrt{a^2 + b^2})^{-1} = \sqrt{ (\frac{a}{a^2+b^2})^2, (\frac{-b}{a^2+b^2} )^2} \] 
+
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =  \sqrt{ \frac{(a)^2}{(a^2+b^2)^2} + \frac{(-b)^2}{(a^2+b^2)^2}}  \] 
+
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =  \sqrt{ \frac{a^2}{(a^2+b^2)^2} + \frac{b^2}{(a^2+b^2)^2}}  \] 
+
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =  \sqrt{  \frac{a^2+b^2}{(a^2+b^2)^2}}  \]
+
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =  \sqrt{  \frac{a^2+b^2}{(a^2+b^2)(a^2+b^2)}}  \] 
+
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =  \sqrt{  \frac{1}{a^2+b^2}}  \] 
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =    \frac{\sqrt{1}}{ \sqrt{a^2+b^2}}   \] 
+\[ \frac{1}{\sqrt{a^2 + b^2}}  =    \frac{1}{ \sqrt{a^2+b^2}}   \] 
+
+
+
+Por lo tanto la afirmacion es cierta
+
+\end{document}

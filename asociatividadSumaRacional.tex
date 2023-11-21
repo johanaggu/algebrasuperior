@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  Asociatividad en suma de números racionales \(\mathbb{Q}\).
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section*{Demostrar asociatividas de la  suma en los números racionales \(\mathbb{Q}\).}
+\noindent  Definimos la suma en el conjunto de numeros racionales como \(\mathbb{Q}_{+} := [(a,b)] + [(c,d)] := [(ad + bc , bd)] \) donde \(a,b,c,d \in \mathbb{Z}\)  \\ \\
+
+
+Dado \(q_{1} = [(a,b)]\),  \(q_{2} = [(c,d)]\) y \(q_{3} = [(e,f)]\) , demuestra que \((q_{1}  +  q_{2}) + q_{3} =  q_{1}  + (q_{2} + q_{2})   \) \\
+
+ \((q_{1}  +  q_{2}) + q_{3} =  ([(a,b)] + [(c,d)] ) + [(e,f)]   \xlongequal[]{ \mathbb{Q}_{+}} ([(ad+bc,bd)] ) + [(e,f)]  \xlongequal[]{ \mathbb{Q}_{+}}  \)\\ 
+
+ \( = [( (ad+bc) f + (bd) e , (bd)f  )]   \xlongequal[]{ Destibutividad- \mathbb{Z}_{*} }  [( f(ad)+ f(bc) + (bd) e , (bd)f  )] = \) \\
+
+
+ \( \xlongequal[]{ Conmutatividad \mathbb{Z}_{*} } ([ a(df)+ b(cf)+b(de), b(df) ]) \xlongequal[]{  Destibutividad-\mathbb{Z}_{*} }  ([ a(df)+ b(cf+ 
+ de), b(df)]  \) \\
+
+\( \xlongequal[]{  \mathbb{Q}_{+}} [(a,b)] + [(cf+de, df)] \xlongequal[]{  \mathbb{Q}_{+}} [(a,b)] + ([(c,d)] +[(e,f)] ) = q_{1} + (q_{2} + q_{3})  \)
+
+
+
+\end{document}

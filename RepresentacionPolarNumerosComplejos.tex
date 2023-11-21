@@ -1,0 +1,168 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries Representación polar de un número complejo \(\mathbb{C}\).
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section*{Obtén la representación polar del número complejo 4-2i y obtén la representación algebraica del número (3, 120°).}
+\section{Obtén la representación polar del número complejo 4-2i.}
+
+Primero representemos el número complejo en el plano de argand y dibujemos un triángulo rectángulo que ayude a calcular los valores del ángulo y el radio polar del número complejo.
+
+
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (-1,0) -- (5,0) node[right] {$\mathbb{R}$};
+    \draw[->] (0,-3) -- (0,1) node[above] {$\mathbb{I}$};
+    
+    % Vector (4, 36)
+    \draw[->, thick] (0,0) -- (333.43:4.4721) node[midway, above left] {};
+    
+    % Punto (4,3)
+    \fill (4,-2) circle[radius=2pt] node[above right] {$4 -2i$};
+    
+    % triangulo
+    % Definición de vértices
+    \coordinate[label=left:] (A) at (0,0);
+    \coordinate[label=right:] (B) at (4,0);
+    \coordinate[label=above:] (C) at (4,-2);
+    
+    % Dibujar el triángulo con lados punteados
+    \draw[dashed] (A) -- (B) -- (C) -- cycle;
+    
+    % Marcar el ángulo recto
+    \draw (3.5,0) -- (3.5,-0.5)-- (4,-0.5) ;
+    
+    % Etiquetar el ángulo recto
+    \node at (3,-0.6) {$90^\circ$};
+
+   
+\end{tikzpicture}
+
+Considerando el punto \(M(x,y)\)  donde  \(x= 4\)  y \(y=-2\) podemos calcular el radio polar que está dado por \(r = \sqrt{x^2 + y^2}\) y el angulo lo podemos calcular usando \( \theta = arctan(\frac{y}{x}) + 2\pi \) para todo \(x > 0\) y \( y < 0\).
+Entonces podemos calcular el valor del radio y ángulo del número de la siguiente forma.
+
+Cálculo del radio: 
+\[r = \sqrt{4^2 + -2^2} \quad,\quad r = 2\sqrt{5}\]
+
+Cálculo del ángulo:
+\[\theta = arctan(\frac{y}{x}) + 2\pi \quad , \quad \theta = arctan(\frac{-2}{4}) + 2\pi \]
+\[\theta = 333_\cdot44^\circ \]
+
+Por lo anterior la representacion polar del numero complejo \(4-2i\) es \((2\sqrt{5}, 333_\cdot44^\circ 
+ ) \)
+
+\begin{tikzpicture}
+  % Eje x
+  \draw[->] (0,0) -- (5,0) node[right] {$\Re$};
+  % Eje y
+  \draw[->] (0,0) -- (0,5) node[above] {$\Im$};
+  % Línea radial
+  \draw[red, thick] (0,0) -- (333.4:4);
+  % Ángulo
+  \draw[blue, thick, ->] (0.7,0) arc (0:333.4:0.7);
+  \draw (1,0.3) node[blue] {$333.4^\circ$};
+  % Punto
+  \node[label={333.4:$(2\sqrt{5}, 333_\cdot44^\circ)$},circle,fill,inner sep=2pt,red] at (333.4:4) {};
+\end{tikzpicture}
+
+
+\section{Obtén la representación algebraica del número (3, 120°).}.
+Primero representemos visualmente el numero, que es el siguiente.
+
+\begin{tikzpicture}
+  % Eje x
+  \draw[->] (0,0) -- (4,0) node[right] {$x$};
+  % Eje y
+  \draw[->] (0,0) -- (0,4) node[above] {$y$};
+  % Línea radial
+  \draw[red, thick] (0,0) -- (120:3);
+  % Ángulo
+  \draw[blue, thick, ->] (0.8,0) arc (0:120:0.8);
+  \draw (1,0.3) node[blue] {$3, 120^\circ$};
+\end{tikzpicture}
+
+La representacion algebraica de un numero complejo se puede obtener como \(x = hCos\theta \) y \(y =hSin\theta \) donde \(h=3 \) y\( M(x,y)\) , siguiendo lo anterior podemos calcularlo como:
+
+\[x = hCos\theta \quad , \quad x=3Cos120^\circ\]
+\[x=-\frac{3}{2}\]
+
+\[y = hSin\theta \quad , \quad y=3Sin120^\circ\]
+\[y=\frac{3\sqrt{3}}{2}\]
+
+Por lo tanto la representacion algebraica de \((3, 120^\circ)\) es \(-\frac{3}{2} + \frac{3\sqrt{3}}{2}i\)
+
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (-5,0) -- (1,0) node[right] {$\mathbb{R}$};
+    \draw[->] (0,-1) -- (0,5) node[above] {$\mathbb{I}$};
+    
+    % Vector (4, 36)
+    \draw[->, thick] (0,0) -- (120:3) node[midway, above left] {};
+    
+    % Punto (4,3)
+    \fill (-1.5,2.5980) circle[radius=2pt] node[above right] {$-\frac{3}{2} + \frac{3\sqrt{3}}{2}i$};
+    
+    % triangulo
+    % Definición de vértices
+    
+    % \coordinate[label=left:] (A) at (0,0);
+    % \coordinate[label=right:] (B) at (4,0);
+    % \coordinate[label=above:] (C) at (4,-2);
+    
+    % Dibujar el triángulo con lados punteados
+    % \draw[dashed] (A) -- (B) -- (C) -- cycle;
+    
+    % Marcar el ángulo recto
+    
+    % Etiquetar el ángulo recto
+
+   
+\end{tikzpicture}
+
+\end{document}

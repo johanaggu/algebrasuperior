@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  Conmutatividad en producto de números racionales \(\mathbb{Q}\).
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section*{Demostrar conmutatividad en la operación producto de los números racionales \(\mathbb{Q}\).}
+\noindent  Definimos el producto en el conjunto de numeros racionales como \(\mathbb{Q}_{*} := [(a,b)] * [(c,d)] := [(ac , bd)] \) donde \(a,b,c,d \in \mathbb{Z}\)  \\ \\
+
+
+Dado \(q_{1} = [(a,b)]\) y \(q_{2} = [(c,d)]\) , demuestra que \( q_{1}  *_{\mathbb{Q}}  q_{2} =  q_{2}*_{\mathbb{Q}} q_{1}    \) \\
+
+\(q_{1} * q_{2}   =  [(a,b)] * [(c,d)] \xlongequal[]{ \mathbb{Q}_{*}} [(ac, bd)] \xlongequal[]{ Conmutat-\mathbb{Z}_{*}}   [(ca, db)] \xlongequal[]{ \mathbb{Q}_{*}} [(c,d)] * [(a,b)] = q_{2}*q_{1} \)
+
+
+
+\end{document}

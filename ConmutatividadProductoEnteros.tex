@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  Conmutatividad en producto de números enteros \(\mathbb{Z}\).
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section*{Demostrar conmutatividad del producto en los números enteros \(\mathbb{Z}\) .}
+\noindent  Definimos el producto los enteros como \(\mathbb{Z}_{*} := [(a,b)] * [(c,d)] := [(a * d + b * c, b * d+ a * c)] \) donde \(a,b,c,d \in \mathbb{N}\)  \\ \\
+
+
+Dado \(Z_{1} = [(a,b)]\) y \(Z_{2} = [(c,d)]\) , demuestra que \(Z_{1}  * Z_{2}   =  Z_{2}  * Z_{1}   \) \\
+
+ \(Z_{1}  * Z_{2}   =  [(a,b)]  * [(c,d)])    \xlongequal[]{ \mathbb{Z}_{*}}   [(a * d + b * c, b * d+ a * c)] \xlongequal[]{ Conmutatividad \mathbb{N}_{*}}\)\\ 
+
+
+\(= [(d* a +  c* b, d* b+ c * a)]  \xlongequal[]{ Conmutatividad \mathbb{N}_{+}}  [( c* b + d* a , d* b+ c * a)] \xlongequal[]{ \mathbb{Z}_{*}} Z_{2} * Z_{1} \)   
+ 
+
+
+
+\end{document}

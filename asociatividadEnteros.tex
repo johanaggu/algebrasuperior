@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  Asociatividad en los números enteros \(\mathbb{Z}\).
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section*{Demostrar asociatividad de la suma en los números enteros \(\mathbb{Z}\) .}
+\noindent   Definimos la suma en los enteros como \(\mathbb{Z}_{+} := [(a,b)] + [(c,d)] := [(a+c,b+d)] \) donde \(a,b,c,d \in \mathbb{N}\)  \\ \\
+Dado \(Z_{1} = [(a,b)]\),  \(Z_{2} = [(c,d)]\) y \(Z_{3} = [(e,f)]\), demuestra que \(Z_{1} + (Z_{2} + Z_{3} )  = (Z_{1} + Z_{2} ) + Z_{3}  \) \\
+
+ \((Z_{1} + Z_{2}) + Z_{3}   =  ([(a,b)] + [(c,d)]) +[(e,f)] \xlongequal[]{ \mathbb{Z}_{+}}  [(a+c,b+d)] + [(e,f)]  = \)\\ 
+ 
+ \( \xlongequal[]{ \mathbb{Z}_{+}} [((a+c)+e ,  (b+d)+f )] \xlongequal[]{ Asociatividad \space \mathbb{N}_{+}} [(a+(c+e) ,  b+(d+f) )] =\) \\
+ 
+ \(\xlongequal[]{ \mathbb{Z}_{+}} [(a,b)] + [(c+e, d+f)] \xlongequal[]{ \mathbb{Z}_{+}} [(a,b)] + ( [(c,d)] + [(e,f)] ) = Z_{1} + (Z_{2} + Z_{3} ) \)
+ 
+
+
+
+\end{document}

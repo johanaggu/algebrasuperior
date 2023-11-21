@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{stackengine}
+\usepackage{enumitem}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries Demuestra que  \(|z_1 + z_2| \leq |z_1| + |z_2| \)
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section{Demuestra que \(| z_1 + z_2| \leq |z_1| + |z_2| \)}
+Dado \(z_1=(a,b) \quad, \quad z_2=(c,d) \quad, \quad z_1+z_2=(a+c,b+d) \) y que  \(|z|=\sqrt{a^2 + b^2 } \)  procedemos a desarrollar.
+
+\[| z_1 + z_2| \leq |z_1| + |z_2|\] 
+
+\[\sqrt{(a+c)^2 +(b+d)^2} \leq \sqrt{a^2 +b^2} + \sqrt{c^2 +d^2} \] 
+
+\[(\sqrt{(a+c)^2 +(b+d)^2})^2 \leq (\sqrt{a^2 +b^2} + \sqrt{c^2 +d^2})^2 \] 
+
+\[(a+c)^2 +(b+d)^2 \leq \sqrt{a^2 +b^2}^2+ 2\sqrt{a^2 +b^2}\sqrt{c^2 +d^2}  + \sqrt{c^2 +d^2}^2 \] 
+
+\[a^2+2ac+ c^2 + b^2 + 2bd + d^2 \leq a^2 +b^2 + 2\sqrt{(a^2 +b^2 )(c^2 +d^2)}  + c^2 +d^2 \] 
+
+\[2ac + 2bd \leq 2\sqrt{(a^2 +b^2 )(c^2 +d^2)} \]
+
+\[ac + bd \leq \sqrt{(a^2 +b^2 )(c^2 +d^2)} \]
+
+\[(ac + bd)^2 \leq (a^2 +b^2 )(c^2 +d^2) \]
+
+\[ a^2c^2  +2acbd+ b^2d^2 \leq a^2 c^2 +a^2 d^2 +b^2 c^2 + b^2 d^2   \]
+
+\[   2acbd \leq a^2 d^2 +b^2 c^2   \]
+
+\[   0 \leq a^2 d^2 +b^2 c^2 - 2acbd    \]
+
+Por lo tanto la afirmacion es cierta
+
+\end{document}
