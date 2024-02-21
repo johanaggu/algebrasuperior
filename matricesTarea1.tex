@@ -1,0 +1,122 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{polynom}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  Matrices ejemplos de \(A^2 - B^2 \neq (A+B)(A-B)  \) y \( (A+B)^2\neq A^2+2AB+B^2  \) 
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section{\(A^2 - B^2 \neq (A+B)(A-B)  \)}
+Consideremos las siguientes matrices:
+
+\[ A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \]
+
+y 
+
+\[ B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} \]
+
+Calculemos \(A^2 - B^2\) y \((A+B)(A-B)\) para ver si son diferentes:
+
+\[ A^2 = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \cdot \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} = \begin{bmatrix} 7 & 10 \\ 15 & 22 \end{bmatrix} \]
+
+\[ B^2 = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} \cdot \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 67 & 78 \\ 91 & 106 \end{bmatrix} \]
+
+Entonces, \(A^2 - B^2\) es:
+
+\[ A^2 - B^2 = \begin{bmatrix} 7 & 10 \\ 15 & 22 \end{bmatrix} - \begin{bmatrix} 67 & 78 \\ 91 & 106 \end{bmatrix} = \begin{bmatrix} -60 & -68 \\ -76 & -84 \end{bmatrix} \]
+
+Ahora, calculemos \((A+B)(A-B)\):
+
+\[ A+B = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} + \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 6 & 8 \\ 10 & 12 \end{bmatrix} \]
+
+\[ A-B = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} - \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} = \begin{bmatrix} -4 & -4 \\ -4 & -4 \end{bmatrix} \]
+
+Entonces, \((A+B)(A-B)\) es:
+
+\[ (A+B)(A-B) = \begin{bmatrix} 6 & 8 \\ 10 & 12 \end{bmatrix} \cdot \begin{bmatrix} -4 & -4 \\ -4 & -4 \end{bmatrix} = \begin{bmatrix} -56 & -56 \\ -88 & -88 \end{bmatrix} \]
+
+En este caso, \(A^2 - B^2\) no es igual a \((A+B)(A-B)\).
+
+
+\section{\((A + B)^2 \neq A^2+2AB +B^2  \)}
+Consideremos las siguientes matrices:
+
+\[ A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \]
+
+y 
+
+\[ B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} \]
+
+Calculemos \((A + B)^2 \) y \(A^2+2AB+B^2\) para ver si son diferentes: \\
+
+Calculemos \((A+B)^2\):
+
+\[ (A+B)^2 = 
+(\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} + 
+\begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} )^2 = 
+\begin{bmatrix} 6 & 8 \\ 10 & 12 \end {bmatrix}^2 =
+\begin{bmatrix} 116 & 144 \\ 180 & 224 \end{bmatrix} \] 
+
+Ahora calculemos \(A^2+2AB+B^2\)
+
+\[A^2 +2AB+B^2= 
+\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}^2 +
+2\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} +
+\begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}^2 =
+\]
+
+\[
+\begin{bmatrix} 7 & 10 \\ 15 & 22 \end{bmatrix} +
+\begin{bmatrix} 38 & 44 \\ 86 & 100 \end{bmatrix} +
+\begin{bmatrix} 67 & 78 \\ 91 & 106 \end{bmatrix} =
+\begin{bmatrix} 112 & 132 \\ 192 & 228 \end{bmatrix} 
+\]
+\\\\
+Por lo tanto \((A+B)^2 \neq A^2 +2AB+B^2\)
+
+
+
+\end{document}

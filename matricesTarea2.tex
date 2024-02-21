@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{polynom}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  Induccion: Demostrar que \(n⁴-4n² \) es multiplo de 3
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section{Sean A y D matrices de orden n. Supongamos que D es una matriz diagonal. Describir
+los productos AD y DA.}
+
+
+Sean \(A\) y \(D\) matrices de orden \(n\), donde \(D\) es una matriz diagonal. Describamos los productos \(AD\) y \(DA\):
+
+1. Producto \(AD\):
+   \[ AD = A \cdot D \]
+
+   Para calcular \(AD\), multiplicamos cada fila de \(A\) por la correspondiente entrada en la diagonal de \(D\). Si \(D\) tiene entradas \(d_i\) en la diagonal, entonces el elemento en la posición \((i, j)\) de la matriz resultante \(AD\) será \(a_{ij} \cdot d_i\). El resultado es una nueva matriz del mismo orden que \(A\).
+
+2. Producto \(DA\):
+   \[ DA = D \cdot A \]
+
+   En este caso, multiplicamos cada columna de \(A\) por la correspondiente entrada en la diagonal de \(D\). Si \(D\) tiene entradas \(d_i\) en la diagonal, entonces el elemento en la posición \((i, j)\) de la matriz resultante \(DA\) será \(d_i \cdot a_{ij}\). El resultado también es una matriz del mismo orden que \(A\).
+
+En resumen, el producto \(AD\) implica multiplicar las filas de \(A\) por los elementos de la diagonal de \(D\), mientras que el producto \(DA\) implica multiplicar las columnas de \(A\) por los elementos de la diagonal de \(D\). Estas operaciones son válidas porque, en una multiplicación de matrices, las dimensiones internas deben coincidir, y en este caso, las dimensiones de las matrices son compatibles.
+
+Dado lo anterior podemos notar que scosas interesantes como que la diagonal de la matriz es la misma por lo tanto la inversa de las matrices es la misma
+
+
+
+\end{document}

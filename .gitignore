@@ -327,7 +327,10 @@ TSWLatexianTemp*
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
-.history
 .ionide
+.history
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,latex
+# PDF
+*.pdf
+

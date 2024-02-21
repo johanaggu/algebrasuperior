@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{icomma}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{polynom}
+\usepackage{graphicx}
+
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.4\textwidth]{FESAcatlanUNAMLogo.png} % Cambia el nombre de archivo por el de tu imagen
+    \vspace{1cm}
+    
+    {\scshape\large Universidad Nacional Autónoma de México \par}
+    {\large Facultad de Estudios Superiores Acatlán \par}
+    \vspace{1.5cm}
+    
+    {\Large\bfseries Licenciatura en Matemáticas Aplicadas \par}
+    \vspace{2cm}
+    
+    {\Huge\bfseries  División de polinomios .
+
+    \par}
+    \vspace{2cm}
+    
+    {\Large\itshape Johan Avila Guerrero \par}
+    \vfill
+    
+    
+    \vfill
+    
+\end{titlepage}
+
+
+% Índice
+
+% Comienza el contenido
+\section*{División de polinomios.}
+
+Dado \(  p(x)=0x^0 + 2x^1+3x^2 \quad  \) y \(\quad d(x)= -1x^0 + 8x^1 + 1x^2 - 10x^3 \quad\) calcula \(\quad \frac{d(x)}{p(x)}\) \\
+
+
+
+
+
+\[
+\begin{array}{c|l}
+  \multicolumn{2}{r}{-\frac{10}{3}x +\frac{23}{9}} \\
+  \cline{2-2}
+  3x^2+2x & -10x^3 + x^2 + 8x - 1 \\
+  \multicolumn{2}{c}{\quad+10x^3 + \frac{20}{3}x^2 } \\ 
+  
+  \cline{2-2}
+  
+  \multicolumn{2}{c}{\qquad 0 \quad + \frac{23}{3}x^2 +8x} \\
+  \multicolumn{2}{c}{\qquad \qquad - \frac{23}{3} x^2 - \frac{46}{9}x} \\
+  \cline{2-2}
+  \multicolumn{2}{c}{\qquad \quad 0 + \frac{26}{9}x-1}  \\
+ \end{array}
+\]
+\\\\
+
+Entonces tenemos que \(\frac{d(x)}{p(x)} = -\frac{10}{3}x + \frac{23}{9}+ \frac{ \frac{26}{9}x-1 }{3x^2+2x} = -\frac{10}{3}x + \frac{23}{9}+ \frac{ 26x-9 }{9(3x^2+2x)}   \) 
+\end{document}
